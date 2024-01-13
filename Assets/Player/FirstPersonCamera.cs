@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using System.Diagnostics.Tracing;
 
 public class FirstPersonCamera : MonoBehaviour
 {
     // Variables
-    private Vector3 offset = new Vector3(0, 0.5f, 0);
     [SerializeField] private float sensitivity = 500;
     private float cameraAxisX, cameraAxisY;
-    
 
-    // GameObject variables
-    public GameObject player;
+    [SerializeField]
+    private LayerMask InteractableMask;
+
+    [SerializeField]
+    private TMP_Text TextPrompt;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +27,19 @@ public class FirstPersonCamera : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        // Constantly keep camera on player.
-        //transform.position = player.transform.position + offset;
+        Interactable hoveredInteractable = null;
+        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, Game.Player.MaxReach, InteractableMask))
+        {
+            hoveredInteractable = hit.collider.gameObject.GetComponent<Interactable>();
+            if (hoveredInteractable) hoveredInteractable.Hover();
+            // Display hover effects here
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (hoveredInteractable) hoveredInteractable.Interact();
+            }
+        }
+        if (hoveredInteractable) TextPrompt.text = hoveredInteractable.HoverMessage;
+        else TextPrompt.text = "";
 
         // Initialize mouse movements
         cameraAxisX -= sensitivity * Input.GetAxis("Mouse Y") * Mathf.Min(Time.deltaTime, .1f); // speed = 2f;
@@ -31,7 +47,7 @@ public class FirstPersonCamera : MonoBehaviour
         
         // Rotate camera based on mouse.
         cameraAxisX = Mathf.Clamp(cameraAxisX, -90, 90); // limits vertical rotation
-        transform.localEulerAngles = new Vector3(cameraAxisX, 0, 0);
-        player.transform.localEulerAngles = new Vector3(0, cameraAxisY, 0);
+        transform.localEulerAngles = Vector3.right * cameraAxisX;
+        transform.parent.localEulerAngles = Vector3.up * cameraAxisY;
     }
 }

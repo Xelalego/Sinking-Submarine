@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public float MaxReach = 2.5f;
+
+    public FirstPersonCamera CameraController;
+    public Movement Movement;
+
     void Awake()
     {
         Game.Player = this;
