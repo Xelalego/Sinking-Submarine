@@ -26,12 +26,12 @@ public class FirstPersonCamera : MonoBehaviour
         //transform.position = player.transform.position + offset;
 
         // Initialize mouse movements
-        //cameraAxisX += sensitivity * Input.GetAxis("Mouse X"); // speed = 2f;
+        cameraAxisX -= sensitivity * Input.GetAxis("Mouse Y") * Mathf.Min(Time.deltaTime, .1f); // speed = 2f;
         cameraAxisY += sensitivity * Input.GetAxis("Mouse X") * Mathf.Min(Time.deltaTime, .1f); // Wtf?!
         
         // Rotate camera based on mouse.
-        //cameraAxisY = Mathf.Clamp(cameraAxisY, -45, 45); // limits vertical rotation
-        transform.eulerAngles = new Vector3(0.0f, cameraAxisY, 0.0f);
-        player.transform.rotation = transform.rotation;
+        cameraAxisX = Mathf.Clamp(cameraAxisX, -90, 90); // limits vertical rotation
+        transform.localEulerAngles = new Vector3(cameraAxisX, 0, 0);
+        player.transform.localEulerAngles = new Vector3(0, cameraAxisY, 0);
     }
 }
