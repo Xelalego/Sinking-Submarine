@@ -5,4 +5,5 @@ using UnityEngine;
 public static class Game
 {
     public static GameManager Manager;
+    public static Player Player;
 }
