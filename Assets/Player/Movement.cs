@@ -8,6 +8,21 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private CharacterController Controller;
 
+    [SerializeField]
+    private LayerMask GroundMask;
+    private float yVel = 0f;
+    [SerializeField]
+    private Transform GroundCheck;
+    [SerializeField]
+    private Transform CeilingCheck;
+
+    private float LastGrounded = -Mathf.Infinity;
+    [SerializeField]
+    private float CoyoteTime = 0.1f;
+    public float JumpVel = 10f;
+    [SerializeField]
+    private float Gravity = 10f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,10 +32,29 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Physics.CheckSphere(GroundCheck.position, 0.5f, GroundMask))
+        {
+            LastGrounded = Time.time + CoyoteTime;
+            yVel = Mathf.Max(-2f, yVel);
+        }
+        else
+        {
+            yVel -= Gravity * Time.deltaTime;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && LastGrounded >= Time.time)
+        {
+            yVel = JumpVel;
+        }
+
+
+
         Vector3 MoveAxis = transform.forward * Input.GetAxisRaw("Vertical");
         MoveAxis += transform.right * Input.GetAxisRaw("Horizontal");
         MoveAxis.Normalize();
 
         Controller.Move(Speed * Time.deltaTime * MoveAxis);
+
+        Controller.Move(yVel * Time.deltaTime * Vector3.up);
     }
 }
