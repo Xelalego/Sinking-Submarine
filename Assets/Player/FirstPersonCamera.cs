@@ -24,11 +24,23 @@ public class FirstPersonCamera : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    // Update is called once per frame
     void LateUpdate()
     {
         Interactable hoveredInteractable = null;
-        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, Game.Player.MaxReach, InteractableMask))
+        // If holding an item
+        if (Game.Player.HeldItem)
+        {
+            //Lerp?
+            //Game.Player.HeldItem.transform.position = Vector3.Lerp(Game.Player.HeldItem.transform.position, transform.position + transform.forward * Game.Player.MaxReach, 0.5f);
+            //Game.Player.HeldItem.transform.position = transform.position + transform.forward * Game.Player.MaxReach;
+            Game.Player.HeldItem.RigidBody.velocity = (transform.position + transform.forward - Game.Player.HeldItem.transform.position) * 10f;
+            if (Input.GetMouseButtonDown(0))
+            {
+                Game.Player.HeldItem.Drop();
+                Game.Player.HeldItem = null;
+            }
+        } // If not holding an item
+        else if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, Game.Player.MaxReach, InteractableMask))
         {
             hoveredInteractable = hit.collider.gameObject.GetComponent<Interactable>();
             if (hoveredInteractable) hoveredInteractable.Hover();
@@ -40,10 +52,15 @@ public class FirstPersonCamera : MonoBehaviour
         }
         if (hoveredInteractable) TextPrompt.text = hoveredInteractable.HoverMessage;
         else TextPrompt.text = "";
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
 
         // Initialize mouse movements
-        cameraAxisX -= sensitivity * Input.GetAxis("Mouse Y") * Mathf.Min(Time.deltaTime, .1f); // speed = 2f;
-        cameraAxisY += sensitivity * Input.GetAxis("Mouse X") * Mathf.Min(Time.deltaTime, .1f); // Wtf?!
+        cameraAxisX -= sensitivity * Input.GetAxis("Mouse Y") * Time.deltaTime; //Mathf.Min(Time.deltaTime, .1f); // speed = 2f;
+        cameraAxisY += sensitivity * Input.GetAxis("Mouse X") * Time.deltaTime; //Mathf.Min(Time.deltaTime, .1f); // Wtf?!
         
         // Rotate camera based on mouse.
         cameraAxisX = Mathf.Clamp(cameraAxisX, -90, 90); // limits vertical rotation

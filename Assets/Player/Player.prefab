@@ -315,7 +315,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 247
+    m_Bits: 503
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -438,9 +438,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3db7051bcc6aeb45949051490ebda33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxReach: 2.5
+  MaxReach: 4
   CameraController: {fileID: 1991842871539383090}
   Movement: {fileID: 6840576901919981070}
+  HeldItem: {fileID: 0}
 --- !u!114 &6840576901919981070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -453,7 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7541679f9d02cba409da5edb87e0ce2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 10
+  Speed: 7
   Controller: {fileID: 4042534730521336469}
   GroundMask:
     serializedVersion: 2

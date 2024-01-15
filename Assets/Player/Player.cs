@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public FirstPersonCamera CameraController;
     public Movement Movement;
 
+    public Pickup HeldItem;
+
     void Awake()
     {
         Game.Player = this;
