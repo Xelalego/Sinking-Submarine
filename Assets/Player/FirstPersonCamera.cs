@@ -33,7 +33,7 @@ public class FirstPersonCamera : MonoBehaviour
             //Lerp?
             //Game.Player.HeldItem.transform.position = Vector3.Lerp(Game.Player.HeldItem.transform.position, transform.position + transform.forward * Game.Player.MaxReach, 0.5f);
             //Game.Player.HeldItem.transform.position = transform.position + transform.forward * Game.Player.MaxReach;
-            Game.Player.HeldItem.RigidBody.velocity = (transform.position + transform.forward - Game.Player.HeldItem.transform.position) * 10f;
+            Game.Player.HeldItem.RigidBody.velocity = (transform.position + transform.forward - Game.Player.HeldItem.transform.position) * Game.Player.HeldItem.SnappingForce;
             if (Input.GetMouseButtonDown(0))
             {
                 Game.Player.HeldItem.Drop();

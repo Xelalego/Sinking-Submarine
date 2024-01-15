@@ -383,6 +383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HoverMessage: Click to pick up
   RigidBody: {fileID: 510105282}
+  SnappingForce: 15
 --- !u!1 &680579123
 GameObject:
   m_ObjectHideFlags: 0

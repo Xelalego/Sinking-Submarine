@@ -6,6 +6,9 @@ public class Pickup : Interactable
 {
     public Rigidbody RigidBody;
 
+    [Tooltip("Multiplies the snapping force to the center of the screen when held by the player")]
+    public float SnappingForce = 10f;
+
     public override void Interact()
     {
         base.Interact();
