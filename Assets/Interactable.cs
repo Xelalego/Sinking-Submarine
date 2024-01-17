@@ -17,9 +17,14 @@ public class Interactable : MonoBehaviour
 
     }
 
+    public virtual bool CanInteract()
+    {
+        return true;
+    }
+
     public virtual void Interact()
     {
-        print(HoverMessage);
+        //print(HoverMessage);
     }
 
     // Update is called once per frame

@@ -458,7 +458,7 @@ MonoBehaviour:
   Controller: {fileID: 4042534730521336469}
   GroundMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   GroundCheck: {fileID: 5216081546007138189}
   CeilingCheck: {fileID: 1790021576810600598}
   CoyoteTime: 0.1

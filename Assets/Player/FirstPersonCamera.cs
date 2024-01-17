@@ -59,8 +59,8 @@ public class FirstPersonCamera : MonoBehaviour
     {
 
         // Initialize mouse movements
-        cameraAxisX -= sensitivity * Input.GetAxis("Mouse Y") * Time.deltaTime; //Mathf.Min(Time.deltaTime, .1f); // speed = 2f;
-        cameraAxisY += sensitivity * Input.GetAxis("Mouse X") * Time.deltaTime; //Mathf.Min(Time.deltaTime, .1f); // Wtf?!
+        cameraAxisX -= sensitivity * Input.GetAxis("Mouse Y") * Mathf.Min(Time.deltaTime, .1f); // speed = 2f;
+        cameraAxisY += sensitivity * Input.GetAxis("Mouse X") * Mathf.Min(Time.deltaTime, .1f); // Wtf?!
         
         // Rotate camera based on mouse.
         cameraAxisX = Mathf.Clamp(cameraAxisX, -90, 90); // limits vertical rotation
