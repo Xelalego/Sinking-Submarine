@@ -12,8 +12,7 @@ public class FirstPersonCamera : MonoBehaviour
     [SerializeField]
     private LayerMask InteractableMask;
 
-    [SerializeField]
-    private TMP_Text TextPrompt;
+    public TMP_Text TextPrompt;
 
 
 

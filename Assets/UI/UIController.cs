@@ -45,6 +45,7 @@ public class UIController : MonoBehaviour
         if (!pauseScreen.activeSelf)
         {
             pauseScreen.SetActive(true);
+            Game.Player.CameraController.TextPrompt.enabled = false;
             Time.timeScale = 0f;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
@@ -52,6 +53,7 @@ public class UIController : MonoBehaviour
         else
         {
             pauseScreen.SetActive(false);
+            Game.Player.CameraController.TextPrompt.enabled = true;
             Time.timeScale = 1f;
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
