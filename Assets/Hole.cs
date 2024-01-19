@@ -32,15 +32,16 @@ public class Hole : MonoBehaviour
 
     private void Update()
     {
-        if (Time.time + SeverityProgressionRate >= StartTime)
+        // Increase water level
+        Game.Manager.WaterLevel += (Severity-1)/100f * Time.deltaTime;
+        if (Time.time + SeverityProgressionRate >= StartTime && Severity < 3)
         {
             Severity++;
-            // Increase water level
-            Game.Manager.WaterLevel += Severity;
             if (Severity >= 3)
             {
                 print("Too late!");
-                Destroy(gameObject);
+                //Destroy(gameObject);
+                // Potentially lock off room?
             }
             StartTime += SeverityProgressionRate;
         }
