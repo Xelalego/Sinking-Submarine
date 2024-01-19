@@ -13,6 +13,7 @@ public class Hole : MonoBehaviour
     private void Start()
     {
         StartTime = Time.time;
+        Game.Manager.Holes.Add(this);
     }
 
     void OnTriggerEnter(Collider other)
@@ -35,6 +36,7 @@ public class Hole : MonoBehaviour
         {
             Severity++;
             // Increase water level
+            Game.Manager.WaterLevel += Severity;
             if (Severity >= 3)
             {
                 print("Too late!");
@@ -42,5 +44,10 @@ public class Hole : MonoBehaviour
             }
             StartTime += SeverityProgressionRate;
         }
+    }
+
+    void OnDestroy()
+    {
+        Game.Manager.Holes.Remove(this);
     }
 }

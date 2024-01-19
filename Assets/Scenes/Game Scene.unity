@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &7010024 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7a5b494234e585a4da29008dbe5aa913, type: 3}
+  m_PrefabInstance: {fileID: 1374198677}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &71043944
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,7 +733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7a5b494234e585a4da29008dbe5aa913, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.07
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7a5b494234e585a4da29008dbe5aa913, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1473,6 +1478,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5984026829406704607, guid: 5cb5d2b379c39c441bda8bceb18f9864, type: 3}
+      propertyPath: Water
+      value: 
+      objectReference: {fileID: 7010024}
     - target: {fileID: 6688088901213824289, guid: 5cb5d2b379c39c441bda8bceb18f9864, type: 3}
       propertyPath: m_Name
       value: Game Manager
