@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SeverityProgressionRate: 100
+  Particles: {fileID: 8000815904876236715}
 --- !u!135 &7483192391502531970
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1033,7 +1034,7 @@ ParticleSystem:
     m_BurstCount: 0
     m_Bursts: []
   SizeModule:
-    enabled: 0
+    enabled: 1
     curve:
       serializedVersion: 2
       minMaxState: 1
@@ -1044,21 +1045,30 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 0
+          value: 1
           inSlope: 0
-          outSlope: 1
+          outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 1
-          outSlope: 0
+          time: 0.87797594
+          value: 0.6787672
+          inSlope: -1.2562978
+          outSlope: -1.2562978
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
+          inWeight: 0.14740925
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: -11.983142
+          outSlope: -11.983142
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.18505156
           outWeight: 0.33333334
         m_PreInfinity: 2
         m_PostInfinity: 2

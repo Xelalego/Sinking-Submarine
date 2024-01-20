@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class Hole : MonoBehaviour
 {
+    [SerializeField]
     private float StartTime = 0f;
     [Tooltip("Time from instantiation to severity increase")]
     [SerializeField]
     private float SeverityProgressionRate = 30f;
     private int Severity = 0;
 
+    [SerializeField]
+    private ParticleSystem Particles;
+
     private void Start()
     {
         StartTime = Time.time;
         Game.Manager.Holes.Add(this);
+        ParticleSystem.EmissionModule emissionModule = Particles.emission;
+        emissionModule.rateOverTime = Severity * 40f + 15f;
     }
 
     void OnTriggerEnter(Collider other)
@@ -34,16 +40,18 @@ public class Hole : MonoBehaviour
     {
         // Increase water level
         Game.Manager.WaterLevel += (Severity-1)/100f * Time.deltaTime;
-        if (Time.time + SeverityProgressionRate >= StartTime && Severity < 3)
+        if (Time.time >= StartTime + SeverityProgressionRate && Severity < 3)// Severity capped at 3
         {
             Severity++;
+            ParticleSystem.EmissionModule emissionModule = Particles.emission;
+            emissionModule.rateOverTime = Severity * 40f + 15f;
             if (Severity >= 3)
             {
                 print("Too late!");
                 //Destroy(gameObject);
                 // Potentially lock off room?
             }
-            StartTime += SeverityProgressionRate;
+            StartTime = Time.time + SeverityProgressionRate;
         }
     }
 
