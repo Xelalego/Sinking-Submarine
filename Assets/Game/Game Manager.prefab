@@ -47,7 +47,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Water: {fileID: 6283373461282433614}
   WaterLevel: -5
+  waterThreshold: 10
+  HoleSpawnpoints: []
   Holes: []
+  HolePrefab: {fileID: 7483192391502531971, guid: b074c29da415b8b4f835ee3e81ffc392, type: 3}
 --- !u!1001 &5816891097043324325
 PrefabInstance:
   m_ObjectHideFlags: 0

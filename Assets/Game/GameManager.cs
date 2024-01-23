@@ -10,8 +10,14 @@ public class GameManager : MonoBehaviour
     public float WaterLevel = -5f;
     [SerializeField] private float waterThreshold = 10f;
 
+    public List<Transform> HoleSpawnpoints = new();
+
     public List<Hole> Holes = new();
 
+    private float NextHole = 10f;
+
+    [SerializeField]
+    private GameObject HolePrefab;
 
 
     void Awake()
@@ -30,6 +36,15 @@ public class GameManager : MonoBehaviour
     {
         Water.transform.position = Vector3.Lerp(Water.transform.position, Vector3.up * WaterLevel, 0.1f * Time.deltaTime);
         CheckWaterLevel();
+        if (Time.time >= NextHole && Holes.Count < (int)(Time.time/60) + 5)
+        {
+            GameObject hole = Instantiate(HolePrefab);
+            Transform holeSpawn = HoleSpawnpoints[Random.Range(0, HoleSpawnpoints.Count)];
+            HoleSpawnpoints.Remove(holeSpawn);
+            hole.transform.SetParent(holeSpawn);// Set parent to an unused Hole Spawner
+            hole.transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
+            NextHole = Time.time + Random.Range(20, 30);
+        }
     }
 
     void CheckWaterLevel()
