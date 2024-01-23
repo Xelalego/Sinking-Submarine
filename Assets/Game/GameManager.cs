@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     {
         Water.transform.position = Vector3.Lerp(Water.transform.position, Vector3.up * WaterLevel, 0.1f * Time.deltaTime);
         CheckWaterLevel();
-        if (Time.time >= NextHole && Holes.Count < (int)(Time.time/60) + 5)
+        if (Time.time >= NextHole && Holes.Count < (int)(Time.time/60) + 5 && HoleSpawnpoints.Count > 0)
         {
             GameObject hole = Instantiate(HolePrefab);
             Transform holeSpawn = HoleSpawnpoints[Random.Range(0, HoleSpawnpoints.Count)];
