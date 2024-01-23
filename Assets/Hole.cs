@@ -58,5 +58,6 @@ public class Hole : MonoBehaviour
     void OnDestroy()
     {
         Game.Manager.Holes.Remove(this);
+        Game.Manager.HoleSpawnpoints.Add(transform.parent);
     }
 }
