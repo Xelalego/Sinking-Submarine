@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField]
-    private Transform Water;
+    public Transform Water;
 
     //Water level starts in the negative as a buffer
     public float WaterLevel = -5f;

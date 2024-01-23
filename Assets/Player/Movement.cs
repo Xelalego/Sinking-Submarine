@@ -6,6 +6,10 @@ public class Movement : MonoBehaviour
 {
     public float Speed = 10f;
     [SerializeField]
+    [Tooltip("Multiply speed while wading")]
+    [Range(0f,1f)]
+    private float WadeSpeed = 0.5f;
+    [SerializeField]
     private CharacterController Controller;
 
     [SerializeField]
@@ -52,6 +56,11 @@ public class Movement : MonoBehaviour
         Vector3 MoveAxis = transform.forward * Input.GetAxisRaw("Vertical");
         MoveAxis += transform.right * Input.GetAxisRaw("Horizontal");
         MoveAxis.Normalize();
+
+        if (Game.Manager.WaterLevel >= Game.Player.transform.position.y)
+        {
+            MoveAxis *= WadeSpeed;
+        }
 
         Controller.Move(Speed * Time.deltaTime * MoveAxis);
 
