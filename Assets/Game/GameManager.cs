@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     //Water level starts in the negative as a buffer
     public float WaterLevel = -5f;
+    [SerializeField] private float waterThreshold = 10f;
 
     public List<Hole> Holes = new();
 
@@ -28,5 +29,22 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         Water.transform.position = Vector3.Lerp(Water.transform.position, Vector3.up * WaterLevel, 0.1f * Time.deltaTime);
+        CheckWaterLevel();
+    }
+
+    void CheckWaterLevel()
+    {
+        // Check if the water has reached the top.
+        if (WaterLevel >= waterThreshold)
+        {
+            GameOver();
+        }
+    }
+
+    void GameOver()
+    {
+        // End the game. The water has reached the top.
+        // Display the game over screen.
+        UIController.instance.GameOverScreen();
     }
 }
