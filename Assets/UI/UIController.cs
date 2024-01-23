@@ -10,7 +10,9 @@ public class UIController : MonoBehaviour
 
     // Main Menu UI variables
     public string mainMenuScene;
+    public string gameScene;
     public GameObject pauseScreen;
+    public GameObject gameOverScreen;
 
     private void Awake()
     {
@@ -60,6 +62,12 @@ public class UIController : MonoBehaviour
         }
     }
 
+    public void GameOverScreen()
+    {
+        Time.timeScale = 0;
+        gameOverScreen.SetActive(true);
+    }
+
     public void GoToMainMenu()
     {
         // Set everything back to moving.
@@ -70,5 +78,20 @@ public class UIController : MonoBehaviour
         Destroy(gameObject);
 
         SceneManager.LoadScene(mainMenuScene);
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(gameScene);
+
+        // If user clicks Restart, then we want to remove
+        // the Game Over screen.
+        gameOverScreen.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }
