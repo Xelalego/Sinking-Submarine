@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
     {
         // End the game. The water has reached the top.
         // Display the game over screen.
-        UIController.instance.GameOverScreen();
+        var UIInstance = GameObject.Find("UI Canvas").GetComponent<UIController>();
+        UIInstance.GameOverScreen();
     }
 }
