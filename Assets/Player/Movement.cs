@@ -36,6 +36,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Physics.CheckSphere(CeilingCheck.position, 0.5f, GroundMask)) yVel = Mathf.Min(0f, yVel);
         if (Physics.CheckSphere(GroundCheck.position, 0.5f, GroundMask))
         {
             LastGrounded = Time.time + CoyoteTime;
