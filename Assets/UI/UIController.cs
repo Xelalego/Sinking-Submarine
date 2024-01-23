@@ -11,32 +11,39 @@ public class UIController : MonoBehaviour
     // Main Menu UI variables
     public string mainMenuScene;
     public string gameScene;
+    private bool isGameOver;
     public GameObject pauseScreen;
     public GameObject gameOverScreen;
 
     private void Awake()
     {
+        Time.timeScale = 1.0f;
         // Set new instance if we have no players.
         if (instance == null)
         {
             instance = this;
+
             // Tell the instance not to destroy itself on a new level/restarted scene.
             // This will carry over our same character and data on loading a scene.
             DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        isGameOver = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         // Check for pause.
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !isGameOver)
         {
             PauseUnPause();
         }
@@ -64,8 +71,13 @@ public class UIController : MonoBehaviour
 
     public void GameOverScreen()
     {
-        Time.timeScale = 0;
+        isGameOver = true;
+
+        // Stop time, bring up the UI, and bring back the mouse.
+        Time.timeScale = 0f;
         gameOverScreen.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void GoToMainMenu()
@@ -82,12 +94,19 @@ public class UIController : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene(gameScene);
-
         // If user clicks Restart, then we want to remove
-        // the Game Over screen.
-        gameOverScreen.SetActive(false);
-        Time.timeScale = 1;
+        // the Game Over screen and remove the mouse.
+        Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        isGameOver = false;
+
+        // Destroy this current UI instance.
+        instance = null;
+        Destroy(gameObject);
+
+        // Restart the scene.
+        SceneManager.LoadScene(gameScene);
     }
 
     public void Quit()

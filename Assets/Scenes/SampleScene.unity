@@ -1359,6 +1359,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5984026829406704607, guid: 5cb5d2b379c39c441bda8bceb18f9864, type: 3}
+      propertyPath: WaterLevel
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 6688088901213824289, guid: 5cb5d2b379c39c441bda8bceb18f9864, type: 3}
       propertyPath: m_Name
       value: Game Manager
@@ -1378,7 +1382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6425165591361592068, guid: e17a536737f0555448622114f563a041, type: 3}
       propertyPath: gameScene
-      value: Game Scene
+      value: SampleScene
       objectReference: {fileID: 0}
     - target: {fileID: 6425165591361592068, guid: e17a536737f0555448622114f563a041, type: 3}
       propertyPath: gameOverScreen
@@ -1582,6 +1586,10 @@ PrefabInstance:
     - target: {fileID: 7483192391502531968, guid: b074c29da415b8b4f835ee3e81ffc392, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483192391502531969, guid: b074c29da415b8b4f835ee3e81ffc392, type: 3}
+      propertyPath: SeverityProgressionRate
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7483192391502531971, guid: b074c29da415b8b4f835ee3e81ffc392, type: 3}
       propertyPath: m_Name

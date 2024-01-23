@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d9d6568885bfa44e84cd0792c4a59ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartTime: 0
   SeverityProgressionRate: 100
   Particles: {fileID: 8000815904876236715}
 --- !u!135 &7483192391502531970

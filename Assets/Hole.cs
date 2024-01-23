@@ -39,7 +39,7 @@ public class Hole : MonoBehaviour
     private void Update()
     {
         // Increase water level
-        Game.Manager.WaterLevel += (Severity-1)/100f * Time.deltaTime;
+        Game.Manager.WaterLevel += Mathf.Max(0, (Severity-1)/100f * Time.deltaTime);
         if (Time.time >= StartTime + SeverityProgressionRate && Severity < 3)// Severity capped at 3
         {
             Severity++;
@@ -58,5 +58,6 @@ public class Hole : MonoBehaviour
     void OnDestroy()
     {
         Game.Manager.Holes.Remove(this);
+        Game.Manager.HoleSpawnpoints.Add(transform.parent);
     }
 }

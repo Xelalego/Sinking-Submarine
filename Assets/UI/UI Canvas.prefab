@@ -1198,8 +1198,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenuScene: SampleScene
-  gameScene: 
+  gameScene: Game Scene
   pauseScreen: {fileID: 6425165590574080002}
+  gameOverScreen: {fileID: 4449570204132948652}
 --- !u!1 &6425165591709543144
 GameObject:
   m_ObjectHideFlags: 0
