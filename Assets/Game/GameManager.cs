@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public List<Hole> Holes = new();
 
     private float NextHole = 10f;
+    public float MinHoleSpawnRate = 30f;
+    public float MaxHoleSpawnRate = 50f;
 
     [SerializeField]
     private GameObject HolePrefab;
@@ -43,8 +45,15 @@ public class GameManager : MonoBehaviour
             HoleSpawnpoints.Remove(holeSpawn);
             hole.transform.SetParent(holeSpawn);// Set parent to an unused Hole Spawner
             hole.transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
-            NextHole = Time.time + Random.Range(20, 30);
+            NextHole = Time.time + Random.Range(MinHoleSpawnRate, MaxHoleSpawnRate);
         }
+        int totalHoleSeverity = 0;
+        foreach (Hole hole in Holes)
+        {
+            totalHoleSeverity += hole.Severity;
+        }
+        WaterLevel += 0.01f * (totalHoleSeverity - 3) * Time.deltaTime;
+        WaterLevel = Mathf.Max(WaterLevel, -1f);
     }
 
     void CheckWaterLevel()
