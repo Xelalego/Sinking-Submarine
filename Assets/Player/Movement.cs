@@ -63,6 +63,14 @@ public class Movement : MonoBehaviour
             MoveAxis *= WadeSpeed;
         }
 
+        if (Game.Player.HeldItem)
+        {
+            if (Game.Player.HeldItem.size == Pickup.Size.Large)
+            {
+                MoveAxis *= 0.6f;
+            }
+        }
+
         Controller.Move(Speed * Time.deltaTime * MoveAxis);
 
         Controller.Move(yVel * Time.deltaTime * Vector3.up);

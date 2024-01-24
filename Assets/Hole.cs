@@ -25,7 +25,7 @@ public class Hole : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Pickup plug = other.gameObject.GetComponent<Pickup>();
-        if (plug)
+        if (plug && PlugFits(plug))
         {
             if (Game.Player.HeldItem == plug) Game.Player.HeldItem = null;
             plug.transform.position = transform.position;// Might be too jumpy
@@ -34,6 +34,13 @@ public class Hole : MonoBehaviour
             Destroy(gameObject, 30f);
             Destroy(this);
         }
+    }
+
+    private bool PlugFits(Pickup plug)
+    {
+        if (Severity == 3) return plug.size == Pickup.Size.Large;
+        else if (Severity == 2) return plug.size == Pickup.Size.Medium;
+        else return plug.size == Pickup.Size.Small;
     }
 
     private void Update()

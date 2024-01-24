@@ -16,6 +16,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 56d0d280f9465ff479c2cb5eedfe7de1, type: 2}
     - target: {fileID: 2485005552156589474, guid: 3bb0bbeb641eb074ca3f51b1689e615f, type: 3}
+      propertyPath: size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2485005552156589474, guid: 3bb0bbeb641eb074ca3f51b1689e615f, type: 3}
       propertyPath: SnappingForce
       value: 7
       objectReference: {fileID: 0}
