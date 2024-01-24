@@ -623,6 +623,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5651495776580051800, guid: fe25951a1bb757a4ea241eee724d33f1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cbfd4b9df2fc8ee48a570644c8c1ce5a, type: 2}
     - target: {fileID: 919132149155446097, guid: fe25951a1bb757a4ea241eee724d33f1, type: 3}
       propertyPath: m_Name
       value: Pipes_MediumStraight
@@ -1061,6 +1065,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lights_Small
       objectReference: {fileID: 0}
+    - target: {fileID: 3368395355028540891, guid: cf229a80643bbef47ae4c85c24fe9e77, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2103faa92cdbe1545ba33422670a9324, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf229a80643bbef47ae4c85c24fe9e77, type: 3}
 --- !u!4 &7490122458015147346 stripped
@@ -1189,6 +1197,10 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -3769518262756971712, guid: e86c489997401dd42888ec649ffaace3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8dc9cd7531bf61047a5aa8e1fb390abe, type: 2}
     - target: {fileID: 919132149155446097, guid: e86c489997401dd42888ec649ffaace3, type: 3}
       propertyPath: m_Name
       value: Wall_BaseWall
@@ -1294,6 +1306,10 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5015540873580287115, guid: 9d9125dc052228f4885797d22536163d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b1a3183b1de349646a5cfa6b2a2aea2c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d9125dc052228f4885797d22536163d, type: 3}
 --- !u!4 &7223283647961476605 stripped
@@ -1375,6 +1391,10 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -3769518262756971712, guid: e86c489997401dd42888ec649ffaace3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8dc9cd7531bf61047a5aa8e1fb390abe, type: 2}
     - target: {fileID: 919132149155446097, guid: e86c489997401dd42888ec649ffaace3, type: 3}
       propertyPath: m_Name
       value: Wall_BaseWall
@@ -1472,6 +1492,10 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -250758555863280067, guid: 9e0bd6f29cab1ec4cb27fd4cd417186c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bcfbf55d148becf4db4f27d77a7d4d3a, type: 2}
     - target: {fileID: 919132149155446097, guid: 9e0bd6f29cab1ec4cb27fd4cd417186c, type: 3}
       propertyPath: m_Name
       value: Floor_StraightWithPanels
