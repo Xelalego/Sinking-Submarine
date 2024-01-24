@@ -6,6 +6,15 @@ public class Pickup : Interactable
 {
     public Rigidbody RigidBody;
 
+    public enum Size
+    {
+        Small,
+        Medium,
+        Large
+    }
+
+    public Size size;
+
     [Tooltip("Multiplies the snapping force to the center of the screen when held by the player")]
     public float SnappingForce = 10f;
 
