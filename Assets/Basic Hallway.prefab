@@ -631,6 +631,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipes_MediumStraight
       objectReference: {fileID: 0}
+    - target: {fileID: 9041656140243998633, guid: fe25951a1bb757a4ea241eee724d33f1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 9041656140243998633, guid: fe25951a1bb757a4ea241eee724d33f1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 9041656140243998633, guid: fe25951a1bb757a4ea241eee724d33f1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe25951a1bb757a4ea241eee724d33f1, type: 3}
 --- !u!4 &4390616927012899100 stripped

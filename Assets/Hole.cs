@@ -30,8 +30,8 @@ public class Hole : MonoBehaviour
             if (Game.Player.HeldItem == plug) Game.Player.HeldItem = null;
             plug.transform.position = transform.position;// Might be too jumpy
             plug.RigidBody.isKinematic = true;
-            Destroy(plug.gameObject, 3f);// Destroy the plug after 3 seconds
-            Destroy(gameObject, 3f);
+            Destroy(plug.gameObject, 30f);// Destroy the plug after 3 seconds
+            Destroy(gameObject, 30f);
             Destroy(this);
         }
     }
