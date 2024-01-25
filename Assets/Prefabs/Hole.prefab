@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 7483192391502531969}
   - component: {fileID: 7483192391502531970}
   - component: {fileID: 2952269063884498179}
+  - component: {fileID: 6587553682559734161}
   m_Layer: 0
   m_Name: Hole
   m_TagString: Untagged
@@ -135,6 +136,7 @@ MonoBehaviour:
   SeverityProgressionRate: 60
   Severity: 0
   Particles: {fileID: 8000815904876236715}
+  animator: {fileID: 6587553682559734161}
 --- !u!135 &7483192391502531970
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -244,6 +246,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &6587553682559734161
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7483192391502531971}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6b2afef9defe9a249bb07cdfadbd0eb4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8365694038108646554
 GameObject:
   m_ObjectHideFlags: 0

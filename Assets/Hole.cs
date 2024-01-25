@@ -13,6 +13,10 @@ public class Hole : MonoBehaviour
 
     [SerializeField]
     private ParticleSystem Particles;
+    [SerializeField]
+    private Animator animator;
+
+    private bool Plugged = false;
 
     private void Start()
     {
@@ -25,14 +29,17 @@ public class Hole : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Pickup plug = other.gameObject.GetComponent<Pickup>();
+        if (!plug) return;
         if (plug && PlugFits(plug))
         {
             if (Game.Player.HeldItem == plug) Game.Player.HeldItem = null;
             plug.transform.position = transform.position;// Might be too jumpy
             plug.RigidBody.isKinematic = true;
+            if (animator) animator.Play("RemoveHole");
             Destroy(plug.gameObject, 30f);// Destroy the plug after 3 seconds
             Destroy(gameObject, 30f);
             Destroy(this);
+            Plugged = true;
         }
     }
 
@@ -40,24 +47,18 @@ public class Hole : MonoBehaviour
     {
         if (Severity == 3) return plug.size == Pickup.Size.Large;
         else if (Severity == 2) return plug.size == Pickup.Size.Medium;
+        else if (Severity == 1) return plug.size == Pickup.Size.Medium || plug.size == Pickup.Size.Small;
         else return plug.size == Pickup.Size.Small;
     }
 
     private void Update()
     {
-        // Increase water level
-        //Game.Manager.WaterLevel += Mathf.Max(0, (Severity-1)/100f * Time.deltaTime);
+        if (Plugged) return;
         if (Time.time >= StartTime + SeverityProgressionRate && Severity < 3)// Severity capped at 3
         {
             Severity++;
             ParticleSystem.EmissionModule emissionModule = Particles.emission;
             emissionModule.rateOverTime = Severity * 40f + 15f;
-            if (Severity >= 3)
-            {
-                print("Too late!");
-                //Destroy(gameObject);
-                // Potentially lock off room?
-            }
             StartTime = Time.time + SeverityProgressionRate;
         }
     }
