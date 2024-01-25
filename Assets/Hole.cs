@@ -32,15 +32,22 @@ public class Hole : MonoBehaviour
         if (!plug) return;
         if (plug && PlugFits(plug))
         {
-            if (Game.Player.HeldItem == plug) Game.Player.HeldItem = null;
-            plug.transform.position = transform.position;// Might be too jumpy
-            plug.RigidBody.isKinematic = true;
-            if (animator) animator.Play("RemoveHole");
-            Destroy(plug.gameObject, 30f);// Destroy the plug after 3 seconds
-            Destroy(gameObject, 30f);
-            Destroy(this);
-            Plugged = true;
+            PlugHole(plug);
         }
+    }
+
+    private void PlugHole(Pickup plug)
+    {
+        ScoreCounter.holeScore += 250 + 50*Severity;
+        if (Game.Player.HeldItem == plug) Game.Player.HeldItem = null;
+        plug.transform.position = transform.position;// Might be too jumpy
+        plug.RigidBody.isKinematic = true;
+        if (animator) animator.Play("RemoveHole");
+        Destroy(plug);
+        Destroy(plug.gameObject, 30f);
+        Destroy(gameObject, 30f);
+        Destroy(this);
+        Plugged = true;
     }
 
     private bool PlugFits(Pickup plug)
