@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 6416271517722389110}
   - component: {fileID: 8204436671575266108}
   - component: {fileID: 4681977307597748136}
-  m_Layer: 0
+  - component: {fileID: 7306797445545685274}
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7306797445545685274
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2863448843034474829}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 48008c3483a7c9340ba515e551d8c054, type: 3}
 --- !u!1 &6498914634793337236
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,7 +107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5871313760219667246}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ceiling_TwoWay
   m_TagString: Untagged
   m_Icon: {fileID: 0}

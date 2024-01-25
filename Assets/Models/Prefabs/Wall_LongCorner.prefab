@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5760463310234662184}
   - component: {fileID: 7432744234019916898}
   - component: {fileID: 6198030200797931766}
-  m_Layer: 0
+  - component: {fileID: 915523390523825556}
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &915523390523825556
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3550922976279602707}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 4cea3c03e89f07e42bc3c52ef5ded6c4, type: 3}
 --- !u!1 &5533413498274995914
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,7 +107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5152525819288487024}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall_LongCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}

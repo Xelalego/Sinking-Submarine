@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3765468094570743392}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor_StraightEndPiece (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4337412270229944120}
   - component: {fileID: 1506095801806081650}
   - component: {fileID: 2721018633801755366}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}

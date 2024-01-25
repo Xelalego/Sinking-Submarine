@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8747029663279465288}
   - component: {fileID: 5887504880451582466}
   - component: {fileID: 6958382892960636566}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8148002455567659536}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall_ShortCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}

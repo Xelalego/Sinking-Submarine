@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6460437726853897909}
   - component: {fileID: 8178320037682784255}
   - component: {fileID: 4637160188718711659}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5897500891629858797}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor_FourWay
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3083025134998131005}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ceiling_WithIndent_Large
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 2502082968963981413}
   - component: {fileID: 751538636516038959}
   - component: {fileID: 4272713496034426299}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}

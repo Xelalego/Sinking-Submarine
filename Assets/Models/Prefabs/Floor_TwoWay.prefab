@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5234496539389674095}
   - component: {fileID: 6950045443950082853}
   - component: {fileID: 5860941935284608945}
-  m_Layer: 0
+  - component: {fileID: 1924785577771552354}
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1924785577771552354
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3896323550365831508}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 7859d25c8fce7ef44a10ebb0e6861721, type: 3}
 --- !u!1 &5449160112342575501
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,7 +107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4671533453409809207}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor_TwoWay
   m_TagString: Untagged
   m_Icon: {fileID: 0}

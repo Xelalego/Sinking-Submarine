@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3102945075357149998}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor_StraightHalfPanels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 2557996388759165558}
   - component: {fileID: 840197814521357116}
   - component: {fileID: 4219100258794850216}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
