@@ -351,6 +351,9 @@ MonoBehaviour:
   InteractableMask:
     serializedVersion: 2
     m_Bits: 193
+  ReachBlockingMask:
+    serializedVersion: 2
+    m_Bits: 193
   TextPrompt: {fileID: 7217694623804308679}
 --- !u!114 &1941069201965558761
 MonoBehaviour:

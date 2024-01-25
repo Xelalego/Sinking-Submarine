@@ -133,7 +133,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 2313465439939838286}
   rigidBody: {fileID: 2485005552156589479}
-  ImpactClips: []
+  ImpactClips:
+  - {fileID: 8300000, guid: 673d7767c520a469985cb49759328145, type: 3}
+  - {fileID: 8300000, guid: 9d0e2862a2e954546bd78fcf51a8ab4a, type: 3}
+  - {fileID: 8300000, guid: ce42aa9d3313140d38949492e4da9311, type: 3}
 --- !u!82 &2313465439939838286
 AudioSource:
   m_ObjectHideFlags: 0
@@ -143,7 +146,7 @@ AudioSource:
   m_GameObject: {fileID: 2485005552156589476}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 3da11e6597e828c4db06f8e1ec3dd710, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -190,7 +193,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

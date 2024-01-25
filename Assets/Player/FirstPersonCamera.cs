@@ -11,6 +11,8 @@ public class FirstPersonCamera : MonoBehaviour
 
     [SerializeField]
     private LayerMask InteractableMask;
+    [SerializeField]
+    private LayerMask ReachBlockingMask;
 
     public TMP_Text TextPrompt;
 
@@ -29,10 +31,12 @@ public class FirstPersonCamera : MonoBehaviour
         // If holding an item
         if (Game.Player.HeldItem)
         {
-            //Lerp?
-            //Game.Player.HeldItem.transform.position = Vector3.Lerp(Game.Player.HeldItem.transform.position, transform.position + transform.forward * Game.Player.MaxReach, 0.5f);
-            //Game.Player.HeldItem.transform.position = transform.position + transform.forward * Game.Player.MaxReach;
-            Game.Player.HeldItem.RigidBody.velocity = (transform.position + transform.forward - Game.Player.HeldItem.transform.position) * Game.Player.HeldItem.SnappingForce;
+            //Shorten reach if would push object into wall (softens impact SFX)
+            Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 1f, ReachBlockingMask);
+            Vector3 point = hit.point;
+            if (point == Vector3.zero || point == null) point = transform.position + transform.forward;
+            Game.Player.HeldItem.RigidBody.velocity = (point - Game.Player.HeldItem.transform.position) * Game.Player.HeldItem.SnappingForce;
+            //Game.Player.HeldItem.RigidBody.velocity = (transform.position + transform.forward - Game.Player.HeldItem.transform.position) * Game.Player.HeldItem.SnappingForce;
             if (Input.GetMouseButtonDown(0))
             {
                 Game.Player.HeldItem.Drop();
