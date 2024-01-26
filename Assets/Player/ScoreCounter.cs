@@ -16,6 +16,7 @@ public class ScoreCounter : MonoBehaviour
     void Start()
     {
         StartTime = Time.time;
+        holeScore = 0;
     }
 
     // Update is called once per frame

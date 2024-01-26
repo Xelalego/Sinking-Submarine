@@ -149,7 +149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 2064675518503088585}
-  score: 0
 --- !u!1 &1544476629357402288
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,7 +567,7 @@ GameObject:
   - component: {fileID: 3275234116922019047}
   - component: {fileID: 1118963256496145085}
   m_Layer: 5
-  m_Name: Resume Button Text
+  m_Name: Restart Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -622,7 +621,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Main Menu
+  m_text: Restart
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -703,7 +702,7 @@ GameObject:
   - component: {fileID: 386056332099512463}
   - component: {fileID: 866477417889960590}
   m_Layer: 5
-  m_Name: Resume Button Text
+  m_Name: Resume Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1348,7 +1347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5204d2993721344880396051859ac3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenuScene: SampleScene
+  mainMenuScene: Game Scene
   gameScene: Game Scene
   pauseScreen: {fileID: 6425165590574080002}
   gameOverScreen: {fileID: 4449570204132948652}
@@ -1365,7 +1364,7 @@ GameObject:
   - component: {fileID: 6425165591709543151}
   - component: {fileID: 6425165591709543150}
   m_Layer: 5
-  m_Name: Main Menu Button
+  m_Name: Restart Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1476,7 +1475,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6425165591361592068}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
-        m_MethodName: GoToMainMenu
+        m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
