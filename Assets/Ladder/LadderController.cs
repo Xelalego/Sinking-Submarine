@@ -50,5 +50,15 @@ public class LadderController : MonoBehaviour
         {
             charController.transform.position += Vector3.down / speedUpDown;
         }
+
+        if (inside && Input.GetKey("a"))
+        {
+            charController.transform.position += (Vector3.left - Camera.main.transform.right) / speedUpDown;
+        }
+
+        if (inside && Input.GetKey("d"))
+        {
+            charController.transform.position += (Vector3.right + Camera.main.transform.right) / speedUpDown;
+        }
     }
 }
