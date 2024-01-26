@@ -3,7 +3,12 @@ guid: 141ee6c6f7100474994736979f267e8b
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: crate_mat
+    second: {fileID: 2100000, guid: 7536ccc22b02a3c42adeac7cddaf5863, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

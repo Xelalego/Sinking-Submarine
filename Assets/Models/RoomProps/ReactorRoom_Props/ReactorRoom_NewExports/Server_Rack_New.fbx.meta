@@ -3,7 +3,22 @@ guid: a3fc0fe8c7bd8ce4fb22460616920c63
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Console_Screen
+    second: {fileID: 2100000, guid: 984dbf2445ecf2f4082d66aa31ca4c84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Server_Rack_mat
+    second: {fileID: 2100000, guid: d27bbbe8913ee0146a407119d3c2cf44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: server_mat
+    second: {fileID: 2100000, guid: 1209353a46f1f8d418f996615f4eeb9f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
