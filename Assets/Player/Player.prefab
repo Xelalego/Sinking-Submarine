@@ -483,7 +483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charController: {fileID: 4042534730521336488}
-  speedUpDown: 10
+  speedUpDown: 6
   playerInput: {fileID: 0}
 --- !u!33 &4042534730521336471
 MeshFilter:

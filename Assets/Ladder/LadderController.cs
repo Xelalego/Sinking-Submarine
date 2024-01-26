@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class LadderController : MonoBehaviour
@@ -43,22 +44,22 @@ public class LadderController : MonoBehaviour
     {
         if (inside && Input.GetKey("w"))
         {
-            charController.transform.position += Vector3.up / speedUpDown;
+            charController.transform.position += Vector3.up * speedUpDown * Time.deltaTime;
         }
 
         if (inside && Input.GetKey("s"))
         {
-            charController.transform.position += Vector3.down / speedUpDown;
+            charController.transform.position += Vector3.down * speedUpDown * Time.deltaTime;
         }
 
         if (inside && Input.GetKey("a"))
         {
-            charController.transform.position += (Vector3.left - Camera.main.transform.right) / speedUpDown;
+            charController.transform.position += (Vector3.left - Camera.main.transform.right) * speedUpDown * Time.deltaTime;
         }
 
         if (inside && Input.GetKey("d"))
         {
-            charController.transform.position += (Vector3.right + Camera.main.transform.right) / speedUpDown;
+            charController.transform.position += (Vector3.right + Camera.main.transform.right) * speedUpDown * Time.deltaTime;
         }
     }
 }
