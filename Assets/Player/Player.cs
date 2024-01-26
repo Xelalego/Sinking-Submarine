@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
 
     public Pickup HeldItem;
 
+    public GameObject HoleWarning;
+
     void Awake()
     {
         Game.Player = this;

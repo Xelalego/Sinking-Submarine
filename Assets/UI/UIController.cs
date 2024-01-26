@@ -15,6 +15,8 @@ public class UIController : MonoBehaviour
     public GameObject pauseScreen;
     public GameObject gameOverScreen;
 
+    public float HoleWarningTime = -Mathf.Infinity;
+
     private void Awake()
     {
         Time.timeScale = 1.0f;
@@ -47,6 +49,8 @@ public class UIController : MonoBehaviour
         {
             PauseUnPause();
         }
+
+        Game.Player.HoleWarning.SetActive(Time.time <= HoleWarningTime);
     }
 
     public void PauseUnPause()

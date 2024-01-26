@@ -30,9 +30,13 @@ public class Hole : MonoBehaviour
     {
         Pickup plug = other.gameObject.GetComponent<Pickup>();
         if (!plug) return;
-        if (plug && PlugFits(plug))
+        if (PlugFits(plug))
         {
             PlugHole(plug);
+        }
+        else
+        {
+            UIController.instance.HoleWarningTime = Time.time + 1.5f;
         }
     }
 
