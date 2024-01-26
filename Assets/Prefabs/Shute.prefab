@@ -497,7 +497,6 @@ MonoBehaviour:
   SpawnObjects:
   - {fileID: 5431092822715299154, guid: a6c46ccfb89ccca458c99e85eedec686, type: 3}
   - {fileID: 5431092822715299154, guid: 1e10839d73bf554499214978558b8343, type: 3}
-  - {fileID: 5431092822715299154, guid: 2b305f743fa7e904a9320a35da32281c, type: 3}
   - {fileID: 5431092822715299154, guid: 73f6c8268ad0a3f48aebab6842395f97, type: 3}
   - {fileID: 5431092822715299154, guid: 2e9ff931f90cd1e47b148dc2d616ca0e, type: 3}
   - {fileID: 5431092822715299154, guid: 2f39ddc7657d0904a8d3230c6a3c9d8f, type: 3}
