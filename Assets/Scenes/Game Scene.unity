@@ -22743,6 +22743,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3076922526229694786, guid: e17a536737f0555448622114f563a041, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3076922526229694786, guid: e17a536737f0555448622114f563a041, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6425165591361592067, guid: e17a536737f0555448622114f563a041, type: 3}
       propertyPath: m_Name
       value: UI Canvas
@@ -22829,6 +22837,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6425165591361592071, guid: e17a536737f0555448622114f563a041, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722205237965662019, guid: e17a536737f0555448622114f563a041, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722205237965662019, guid: e17a536737f0555448622114f563a041, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722205237965662019, guid: e17a536737f0555448622114f563a041, type: 3}
+      propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
