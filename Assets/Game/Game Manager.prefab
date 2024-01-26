@@ -50,6 +50,8 @@ MonoBehaviour:
   waterThreshold: 10
   HoleSpawnpoints: []
   Holes: []
+  MinHoleSpawnRate: 15
+  MaxHoleSpawnRate: 35
   HolePrefab: {fileID: 7483192391502531971, guid: b074c29da415b8b4f835ee3e81ffc392, type: 3}
 --- !u!1001 &5816891097043324325
 PrefabInstance:
