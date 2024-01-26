@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 678c34a7d72bffc4387f0fb6eb7c934a
+guid: cd2a41ad4fae35247a0a52f9e4b3f360
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Server_Rack_mat
-    second: {fileID: 2100000, guid: d27bbbe8913ee0146a407119d3c2cf44, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: server_mat
-    second: {fileID: 2100000, guid: 1209353a46f1f8d418f996615f4eeb9f, type: 2}
+      name: Electrical_Box_01_Texture
+    second: {fileID: 2100000, guid: 54edb1b696de41c44a187e3d39b74289, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
