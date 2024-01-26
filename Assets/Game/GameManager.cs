@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
 
     public List<Hole> Holes = new();
 
-    private float NextHole = 10f;
+    private float NextHole;
     public float MinHoleSpawnRate = 30f;
     public float MaxHoleSpawnRate = 50f;
 
@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         Game.Manager = this;
+        NextHole = Time.time + 10f;
     }
 
     // Start is called before the first frame update
@@ -38,7 +39,7 @@ public class GameManager : MonoBehaviour
     {
         Water.transform.position = Vector3.Lerp(Water.transform.position, Vector3.up * WaterLevel, 0.1f * Time.deltaTime);
         CheckWaterLevel();
-        if (Time.time >= NextHole && Holes.Count < (int)(Time.time/60) + 5 && HoleSpawnpoints.Count > 0)
+        if (Time.time >= NextHole && Holes.Count < (int)(Time.timeSinceLevelLoad/60) + 5 && HoleSpawnpoints.Count > 0)
         {
             GameObject hole = Instantiate(HolePrefab);
             Transform holeSpawn = HoleSpawnpoints[Random.Range(0, HoleSpawnpoints.Count)];
