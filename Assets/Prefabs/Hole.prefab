@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartTime: 0
-  SeverityProgressionRate: 60
+  SeverityProgressionRate: 15
   Severity: 0
   Particles: {fileID: 8000815904876236715}
   animator: {fileID: 6587553682559734161}
