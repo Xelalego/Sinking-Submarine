@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Console_Screen
-    second: {fileID: 2100000, guid: 984dbf2445ecf2f4082d66aa31ca4c84, type: 2}
+    second: {fileID: 2100000, guid: c4b0c02b3d285f04883b8fae344a81e3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
