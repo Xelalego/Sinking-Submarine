@@ -22387,6 +22387,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lights_Small (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6277336063051585521, guid: b53f200a7e759fe40aa90352cd966368, type: 3}
+      propertyPath: m_Cookie
+      value: 
+      objectReference: {fileID: 8900000, guid: ca2cd65e7e4633c41aedbe33efcabfcb, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b53f200a7e759fe40aa90352cd966368, type: 3}
 --- !u!1001 &1664248368

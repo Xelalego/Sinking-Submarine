@@ -57,9 +57,10 @@ public class Hole : MonoBehaviour
     private bool PlugFits(Pickup plug)
     {
         if (Severity == 3) return plug.size == Pickup.Size.Large;
+        return true;
         //else if (Severity == 2) return plug.size == Pickup.Size.Medium;
         //else if (Severity == 1) return plug.size == Pickup.Size.Medium || plug.size == Pickup.Size.Small;
-        else return plug.size == Pickup.Size.Small ||plug.size == Pickup.Size.Medium;
+        //else return plug.size == Pickup.Size.Small ||plug.size == Pickup.Size.Medium;
     }
 
     private void Update()
