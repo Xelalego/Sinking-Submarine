@@ -3,7 +3,12 @@ guid: 434ab339d1d71a04c953407162df9b31
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Laptop_Texture
+    second: {fileID: 2100000, guid: ca9117101461d6442b6949a344adb71a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
