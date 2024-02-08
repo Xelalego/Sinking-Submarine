@@ -12,14 +12,21 @@ public class VolumeSlider : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mixer.SetFloat("MasterVolume", Mathf.Log10(0.5f) * 20);
+        if (PlayerPrefs.HasKey("MasterVolume")) mixer.SetFloat("MasterVolume", PlayerPrefs.GetFloat("MasterVolume"));
+        else
+        {
+            UpdateVolume();
+            //PlayerPrefs.SetFloat("MasterVolume", Mathf.Log10(slider.value) * 20);
+            //mixer.SetFloat("MasterVolume", Mathf.Log10(0.5f) * 20);
+        }
         //mixer.GetFloat("MasterVolume", out float volume);
         //slider.value = Mathf.Pow(10f, Mathf.Log(volume)) / 20f;
     }
 
     public void UpdateVolume()
     {
-        mixer.SetFloat("MasterVolume", Mathf.Log10(slider.value) * 20);
+        PlayerPrefs.SetFloat("MasterVolume", Mathf.Log10(slider.value) * 20);
+        mixer.SetFloat("MasterVolume", PlayerPrefs.GetFloat("MasterVolume"));
     }
 
     // Update is called once per frame
