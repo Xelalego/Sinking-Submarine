@@ -10,14 +10,13 @@ public class SensitivitySlider : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetFloat("MouseSensitivity", Mathf.Log10(0.5f) * 20);
-        //mixer.GetFloat("MasterVolume", out float volume);
-        //slider.value = Mathf.Pow(10f, Mathf.Log(volume)) / 20f;
+        if (PlayerPrefs.HasKey("MouseSensitivity")) slider.value = PlayerPrefs.GetFloat("MouseSensitivity");
+        else UpdateSensitivity();
     }
 
     public void UpdateSensitivity()
     {
-        PlayerPrefs.SetFloat("MouseSensitivity", Mathf.Log10(slider.value) * 20);
+        PlayerPrefs.SetFloat("MouseSensitivity", slider.value);
     }
 
     // Update is called once per frame
