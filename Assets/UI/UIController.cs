@@ -17,6 +17,8 @@ public class UIController : MonoBehaviour
 
     public float HoleWarningTime = -Mathf.Infinity;
 
+    public static bool Paused = false;
+
     private void Awake()
     {
         Time.timeScale = 1.0f;
@@ -33,6 +35,8 @@ public class UIController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        pauseScreen.SetActive(false);
+        gameOverScreen.SetActive(false);
     }
 
     // Start is called before the first frame update
@@ -47,28 +51,26 @@ public class UIController : MonoBehaviour
         // Check for pause.
         if (Input.GetKeyDown(KeyCode.Escape) && !isGameOver)
         {
-            PauseUnPause();
+            TogglePause();
         }
 
         Game.Player.HoleWarning.SetActive(Time.time <= HoleWarningTime);
     }
 
-    public void PauseUnPause()
+    public void TogglePause()
     {
-        if (!pauseScreen.activeSelf)
+        Paused = !Paused;
+        pauseScreen.SetActive(Paused);
+        Game.Player.CameraController.TextPrompt.enabled = !Paused;
+        Cursor.visible = Paused;
+        if (Paused)
         {
-            pauseScreen.SetActive(true);
-            Game.Player.CameraController.TextPrompt.enabled = false;
             Time.timeScale = 0f;
-            Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
         else
         {
-            pauseScreen.SetActive(false);
-            Game.Player.CameraController.TextPrompt.enabled = true;
             Time.timeScale = 1f;
-            Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
     }

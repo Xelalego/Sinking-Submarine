@@ -5,8 +5,6 @@ using TMPro;
 
 public class FirstPersonCamera : MonoBehaviour
 {
-    // Variables
-    [SerializeField] private float sensitivity = 500;
     private float cameraAxisX, cameraAxisY;
 
     [SerializeField]
@@ -60,10 +58,11 @@ public class FirstPersonCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (UIController.Paused) return;
+        // Removed DeltaTime, may re-add later if framerate changes sensitivity
         // Initialize mouse movements
-        cameraAxisX -= sensitivity * Input.GetAxis("Mouse Y") * Mathf.Min(Time.deltaTime, .1f); // speed = 2f;
-        cameraAxisY += sensitivity * Input.GetAxis("Mouse X") * Mathf.Min(Time.deltaTime, .1f); // Wtf?!
+        cameraAxisX -= PlayerPrefs.GetFloat("MouseSensitivity") * Input.GetAxis("Mouse Y");// * Mathf.Min(Time.deltaTime, .1f); // speed = 2f;
+        cameraAxisY += PlayerPrefs.GetFloat("MouseSensitivity") * Input.GetAxis("Mouse X");// * Mathf.Min(Time.deltaTime, .1f); // Wtf?!
         
         // Rotate camera based on mouse.
         cameraAxisX = Mathf.Clamp(cameraAxisX, -90, 90); // limits vertical rotation
