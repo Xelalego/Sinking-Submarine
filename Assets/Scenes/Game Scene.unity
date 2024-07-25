@@ -59919,6 +59919,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Resume
       objectReference: {fileID: 0}
+    - target: {fileID: 1520009130463663068, guid: e17a536737f0555448622114f563a041, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2654452178786772330, guid: e17a536737f0555448622114f563a041, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

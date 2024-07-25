@@ -14,6 +14,8 @@ public class FirstPersonCamera : MonoBehaviour
 
     public TMP_Text TextPrompt;
 
+    [SerializeField]
+    private float smoothFactor = 10f;
 
 
     // Start is called before the first frame update
@@ -33,7 +35,7 @@ public class FirstPersonCamera : MonoBehaviour
             Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 1f, ReachBlockingMask);
             Vector3 point = hit.point;
             if (point == Vector3.zero || point == null) point = transform.position + transform.forward;
-            Game.Player.HeldItem.RigidBody.velocity = (point - Game.Player.HeldItem.transform.position) * Game.Player.HeldItem.SnappingForce;
+            Game.Player.HeldItem.RigidBody.velocity = Vector3.Lerp(Game.Player.HeldItem.RigidBody.velocity, (point - Game.Player.HeldItem.transform.position) * Game.Player.HeldItem.SnappingForce, Time.deltaTime * smoothFactor);
             //Game.Player.HeldItem.RigidBody.velocity = (transform.position + transform.forward - Game.Player.HeldItem.transform.position) * Game.Player.HeldItem.SnappingForce;
             if (Input.GetMouseButtonDown(0))
             {

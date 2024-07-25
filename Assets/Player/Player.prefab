@@ -347,7 +347,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b8fd0bd8e214d44fbaaecd636f3fc08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 500
   InteractableMask:
     serializedVersion: 2
     m_Bits: 193
@@ -355,6 +354,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 193
   TextPrompt: {fileID: 7217694623804308679}
+  smoothFactor: 10
 --- !u!114 &1941069201965558761
 MonoBehaviour:
   m_ObjectHideFlags: 0
