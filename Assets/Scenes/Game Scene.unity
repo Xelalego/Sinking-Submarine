@@ -40843,11 +40843,6 @@ Transform:
   m_Father: {fileID: 2010133316}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1590954664 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4042534730521336488, guid: ec9e426667c307c4dac62576e652f3d6, type: 3}
-  m_PrefabInstance: {fileID: 4042534731374280776}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1592847787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58982,18 +58977,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 556938115335452920, guid: ec9e426667c307c4dac62576e652f3d6, type: 3}
       propertyPath: m_ShowCustomSorter
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 556938115335452920, guid: ec9e426667c307c4dac62576e652f3d6, type: 3}
-      propertyPath: volumeLayer.m_Bits
-      value: 473
-      objectReference: {fileID: 0}
-    - target: {fileID: 1941069201965558761, guid: ec9e426667c307c4dac62576e652f3d6, type: 3}
-      propertyPath: m_VolumeTrigger
-      value: 
-      objectReference: {fileID: 1590954664}
-    - target: {fileID: 1941069201965558761, guid: ec9e426667c307c4dac62576e652f3d6, type: 3}
-      propertyPath: m_RenderPostProcessing
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4042534730521336468, guid: ec9e426667c307c4dac62576e652f3d6, type: 3}
