@@ -218,6 +218,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 632227936}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToNewGameLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8400352574228659784, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
       propertyPath: m_text
       value: New Game
@@ -368,6 +380,7 @@ GameObject:
   - component: {fileID: 632227934}
   - component: {fileID: 632227933}
   - component: {fileID: 632227932}
+  - component: {fileID: 632227936}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -461,6 +474,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &632227936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632227931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7fd8c12c278dfb4fbf4bdd7280b198d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newGameLevel: Game Scene
 --- !u!1001 &1449082024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -867,6 +893,18 @@ PrefabInstance:
     - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 632227936}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Quit
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8400352574228659784, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
       propertyPath: m_text
