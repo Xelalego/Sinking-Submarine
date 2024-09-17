@@ -6,4 +6,6 @@ public static class Game
 {
     public static GameManager Manager;
     public static Player Player;
+
+    public static LevelConfig CurrentLevel;
 }

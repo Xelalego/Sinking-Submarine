@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d19ae214ba8c917488a5f8fef3ec3a74
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - LevelNumber: {instanceID: 0}
+  - FullStar: {fileID: 21300000, guid: a4e0db47ae2e78d4ea9375224fb11254, type: 3}
+  - EmptyStar: {fileID: 21300000, guid: 0eca0a80a0cb0294681158401e817869, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

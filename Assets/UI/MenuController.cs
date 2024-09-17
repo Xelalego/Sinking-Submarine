@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-    public string newGameLevel;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -20,12 +18,9 @@ public class MenuController : MonoBehaviour
         
     }
 
-    public void GoToNewGameLevel()
+    public void LoadScene(string SceneName)
     {
-        // Set everything back to moving.
-        Time.timeScale = 1f;
-
-        SceneManager.LoadScene(newGameLevel);
+        SceneManager.LoadScene(SceneName);
     }
 
     public void Quit()
