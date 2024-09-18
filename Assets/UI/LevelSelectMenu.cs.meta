@@ -3,7 +3,8 @@ guid: 9237ea3b8088c4d4bb378dd36758332f
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - LevelSelectButtonPrefab: {fileID: 4424774425731003810, guid: 26ed9dbe6cffb9e4d9eef024da100227, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

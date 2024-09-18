@@ -27,6 +27,11 @@ public class LevelSelectMenu : MonoBehaviour
         }
     }
 
+    public void NewGame()
+    {
+        Game.CurrentLevel = LevelConfigs[0];
+    }
+
     // Update is called once per frame
     void Update()
     {

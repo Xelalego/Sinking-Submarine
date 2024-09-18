@@ -15,8 +15,6 @@ public class GameManager : MonoBehaviour
     public List<Hole> Holes = new();
 
     private float NextHole;
-    public float MinHoleSpawnRate = 30f;
-    public float MaxHoleSpawnRate = 50f;
 
     [SerializeField]
     private GameObject HolePrefab;
@@ -39,21 +37,21 @@ public class GameManager : MonoBehaviour
     {
         Water.transform.position = Vector3.Lerp(Water.transform.position, Vector3.up * WaterLevel, 0.1f * Time.deltaTime);
         CheckWaterLevel();
-        if (Time.time >= NextHole && Holes.Count < (int)(Time.timeSinceLevelLoad/60) + 5 && HoleSpawnpoints.Count > 0)
+        if (Time.time >= NextHole && Holes.Count < (int)(Time.timeSinceLevelLoad/ Game.CurrentLevel.MaxHoleIncreaseRate) + 5 && HoleSpawnpoints.Count > 0)
         {
             GameObject hole = Instantiate(HolePrefab);
             Transform holeSpawn = HoleSpawnpoints[Random.Range(0, HoleSpawnpoints.Count)];
             HoleSpawnpoints.Remove(holeSpawn);
             hole.transform.SetParent(holeSpawn);// Set parent to an unused Hole Spawner
             hole.transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
-            NextHole = Time.time + Random.Range(MinHoleSpawnRate, MaxHoleSpawnRate);
+            NextHole = Time.time + Random.Range(Game.CurrentLevel.MinHoleSpawnRate, Game.CurrentLevel.MaxHoleSpawnRate);
         }
         int totalHoleSeverity = 0;
         foreach (Hole hole in Holes)
         {
             totalHoleSeverity += hole.Severity;
         }
-        WaterLevel += 0.01f * (totalHoleSeverity - 3) * Time.deltaTime;
+        WaterLevel += Game.CurrentLevel.RisingRate * (totalHoleSeverity - 3) * Time.deltaTime;
         WaterLevel = Mathf.Max(WaterLevel, -1f);
     }
 

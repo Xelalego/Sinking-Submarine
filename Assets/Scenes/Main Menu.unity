@@ -219,24 +219,60 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 168526802}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
       objectReference: {fileID: 632227936}
     - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NewGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: LoadScene
       objectReference: {fileID: 0}
     - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelSelectMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: MenuController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: SampleScene
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Game Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8400352574228659784, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
       propertyPath: m_text
@@ -307,11 +343,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 100
-    m_Right: 100
-    m_Top: 100
-    m_Bottom: 100
-  m_ChildAlignment: 4
+    m_Left: 150
+    m_Right: 150
+    m_Top: 150
+    m_Bottom: 150
+  m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 200, y: 200}
@@ -331,44 +367,116 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelConfigs:
-  - TimeLimit: 0
+  - TimeLimit: 120
     LevelNumber: 0
-  - TimeLimit: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
     LevelNumber: 0
-  - TimeLimit: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 180
     LevelNumber: 0
-  - TimeLimit: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 180
     LevelNumber: 0
-  - TimeLimit: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 60
     LevelNumber: 0
-  - TimeLimit: 0
+    MinHoleSpawnRate: 20
+    MaxHoleSpawnRate: 40
+    RisingRate: 0.5
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
     LevelNumber: 0
-  - TimeLimit: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
     LevelNumber: 0
-  - TimeLimit: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
     LevelNumber: 0
-  - TimeLimit: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
     LevelNumber: 0
-  - TimeLimit: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
     LevelNumber: 0
-  - TimeLimit: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
     LevelNumber: 0
-  - TimeLimit: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
     LevelNumber: 0
-  - TimeLimit: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
     LevelNumber: 0
-  - TimeLimit: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
     LevelNumber: 0
-  - TimeLimit: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
     LevelNumber: 0
-  - TimeLimit: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
     LevelNumber: 0
-  - TimeLimit: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 8
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 60
     LevelNumber: 0
-  - TimeLimit: 0
+    MinHoleSpawnRate: 15
+    MaxHoleSpawnRate: 30
+    RisingRate: 10
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
     LevelNumber: 0
+    MinHoleSpawnRate: 15
+    MaxHoleSpawnRate: 30
+    RisingRate: 10
+    MaxHoleIncreaseRate: 60
   LevelSelectButtonPrefab: {fileID: 4424774425731003810, guid: 26ed9dbe6cffb9e4d9eef024da100227, type: 3}
-  ButtonSpawnRate: 0.03
+  ButtonSpawnRate: 0.04
 --- !u!224 &353258607 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
