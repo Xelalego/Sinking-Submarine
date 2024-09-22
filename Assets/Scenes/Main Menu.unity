@@ -233,7 +233,7 @@ PrefabInstance:
     - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 168526802}
+      objectReference: {fileID: 0}
     - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -302,6 +302,180 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4082484472699264948, guid: 29999612fb54a0d4f995288f74ad0ba4, type: 3}
   m_PrefabInstance: {fileID: 1840021728}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &140658867
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 168526800}
+    m_Modifications:
+    - target: {fileID: 2429853241317036032, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_Name
+      value: Start Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 632227936}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NewGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelSelectMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MenuController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Game Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8400352574228659784, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_text
+      value: Start
+      objectReference: {fileID: 0}
+    - target: {fileID: 8400352574228659784, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8400352574228659784, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8400352574228659784, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+--- !u!224 &140658868 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
+  m_PrefabInstance: {fileID: 140658867}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &168526799
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,8 +485,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 168526800}
-  - component: {fileID: 168526802}
-  - component: {fileID: 168526801}
   m_Layer: 5
   m_Name: Level Select Menu
   m_TagString: Untagged
@@ -331,162 +503,18 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 136285970}
+  - {fileID: 607266324}
+  - {fileID: 140658868}
   m_Father: {fileID: 632227935}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &168526801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168526799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 150
-    m_Right: 150
-    m_Top: 150
-    m_Bottom: 150
-  m_ChildAlignment: 0
-  m_StartCorner: 0
-  m_StartAxis: 0
-  m_CellSize: {x: 200, y: 200}
-  m_Spacing: {x: 75, y: 75}
-  m_Constraint: 0
-  m_ConstraintCount: 2
---- !u!114 &168526802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168526799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9237ea3b8088c4d4bb378dd36758332f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LevelConfigs:
-  - TimeLimit: 120
-    LevelNumber: 0
-    MinHoleSpawnRate: 30
-    MaxHoleSpawnRate: 50
-    RisingRate: 0.01
-    MaxHoleIncreaseRate: 60
-  - TimeLimit: 120
-    LevelNumber: 0
-    MinHoleSpawnRate: 30
-    MaxHoleSpawnRate: 50
-    RisingRate: 0.01
-    MaxHoleIncreaseRate: 60
-  - TimeLimit: 180
-    LevelNumber: 0
-    MinHoleSpawnRate: 30
-    MaxHoleSpawnRate: 50
-    RisingRate: 0.01
-    MaxHoleIncreaseRate: 60
-  - TimeLimit: 180
-    LevelNumber: 0
-    MinHoleSpawnRate: 30
-    MaxHoleSpawnRate: 50
-    RisingRate: 0.01
-    MaxHoleIncreaseRate: 60
-  - TimeLimit: 60
-    LevelNumber: 0
-    MinHoleSpawnRate: 20
-    MaxHoleSpawnRate: 40
-    RisingRate: 0.5
-    MaxHoleIncreaseRate: 60
-  - TimeLimit: 120
-    LevelNumber: 0
-    MinHoleSpawnRate: 30
-    MaxHoleSpawnRate: 50
-    RisingRate: 0.01
-    MaxHoleIncreaseRate: 60
-  - TimeLimit: 120
-    LevelNumber: 0
-    MinHoleSpawnRate: 30
-    MaxHoleSpawnRate: 50
-    RisingRate: 0.01
-    MaxHoleIncreaseRate: 60
-  - TimeLimit: 120
-    LevelNumber: 0
-    MinHoleSpawnRate: 30
-    MaxHoleSpawnRate: 50
-    RisingRate: 0.01
-    MaxHoleIncreaseRate: 60
-  - TimeLimit: 120
-    LevelNumber: 0
-    MinHoleSpawnRate: 30
-    MaxHoleSpawnRate: 50
-    RisingRate: 0.01
-    MaxHoleIncreaseRate: 60
-  - TimeLimit: 120
-    LevelNumber: 0
-    MinHoleSpawnRate: 30
-    MaxHoleSpawnRate: 50
-    RisingRate: 0.01
-    MaxHoleIncreaseRate: 60
-  - TimeLimit: 120
-    LevelNumber: 0
-    MinHoleSpawnRate: 30
-    MaxHoleSpawnRate: 50
-    RisingRate: 0.01
-    MaxHoleIncreaseRate: 60
-  - TimeLimit: 120
-    LevelNumber: 0
-    MinHoleSpawnRate: 30
-    MaxHoleSpawnRate: 50
-    RisingRate: 0.01
-    MaxHoleIncreaseRate: 60
-  - TimeLimit: 120
-    LevelNumber: 0
-    MinHoleSpawnRate: 30
-    MaxHoleSpawnRate: 50
-    RisingRate: 0.01
-    MaxHoleIncreaseRate: 60
-  - TimeLimit: 120
-    LevelNumber: 0
-    MinHoleSpawnRate: 30
-    MaxHoleSpawnRate: 50
-    RisingRate: 0.01
-    MaxHoleIncreaseRate: 60
-  - TimeLimit: 120
-    LevelNumber: 0
-    MinHoleSpawnRate: 30
-    MaxHoleSpawnRate: 50
-    RisingRate: 0.01
-    MaxHoleIncreaseRate: 60
-  - TimeLimit: 120
-    LevelNumber: 0
-    MinHoleSpawnRate: 30
-    MaxHoleSpawnRate: 50
-    RisingRate: 8
-    MaxHoleIncreaseRate: 60
-  - TimeLimit: 60
-    LevelNumber: 0
-    MinHoleSpawnRate: 15
-    MaxHoleSpawnRate: 30
-    RisingRate: 10
-    MaxHoleIncreaseRate: 60
-  - TimeLimit: 120
-    LevelNumber: 0
-    MinHoleSpawnRate: 15
-    MaxHoleSpawnRate: 30
-    RisingRate: 10
-    MaxHoleIncreaseRate: 60
-  LevelSelectButtonPrefab: {fileID: 4424774425731003810, guid: 26ed9dbe6cffb9e4d9eef024da100227, type: 3}
-  ButtonSpawnRate: 0.04
 --- !u!224 &353258607 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2429853241317036033, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
@@ -607,6 +635,191 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!1 &607266323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 607266324}
+  - component: {fileID: 607266326}
+  - component: {fileID: 607266325}
+  m_Layer: 5
+  m_Name: Level Button Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &607266324
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607266323}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 168526800}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &607266325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607266323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 150
+    m_Right: 150
+    m_Top: 150
+    m_Bottom: 150
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 200, y: 200}
+  m_Spacing: {x: 75, y: 75}
+  m_Constraint: 0
+  m_ConstraintCount: 2
+--- !u!114 &607266326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607266323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9237ea3b8088c4d4bb378dd36758332f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelConfigs:
+  - TimeLimit: 120
+    LevelNumber: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
+    LevelNumber: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 180
+    LevelNumber: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 180
+    LevelNumber: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 60
+    LevelNumber: 0
+    MinHoleSpawnRate: 20
+    MaxHoleSpawnRate: 40
+    RisingRate: 0.5
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
+    LevelNumber: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
+    LevelNumber: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
+    LevelNumber: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
+    LevelNumber: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
+    LevelNumber: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
+    LevelNumber: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
+    LevelNumber: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
+    LevelNumber: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
+    LevelNumber: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
+    LevelNumber: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 0.01
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
+    LevelNumber: 0
+    MinHoleSpawnRate: 30
+    MaxHoleSpawnRate: 50
+    RisingRate: 8
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 60
+    LevelNumber: 0
+    MinHoleSpawnRate: 15
+    MaxHoleSpawnRate: 30
+    RisingRate: 10
+    MaxHoleIncreaseRate: 60
+  - TimeLimit: 120
+    LevelNumber: 0
+    MinHoleSpawnRate: 15
+    MaxHoleSpawnRate: 30
+    RisingRate: 10
+    MaxHoleIncreaseRate: 60
+  LevelSelectButtonPrefab: {fileID: 4424774425731003810, guid: 26ed9dbe6cffb9e4d9eef024da100227, type: 3}
+  ButtonSpawnRate: 0.04
 --- !u!1 &632227931
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,7 +914,6 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1914140561}
-  - {fileID: 136285970}
   - {fileID: 679194352}
   - {fileID: 168526800}
   m_Father: {fileID: 0}
@@ -757,7 +969,7 @@ RectTransform:
   - {fileID: 1755666888}
   - {fileID: 1825431577}
   m_Father: {fileID: 632227935}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -861,7 +1073,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2429853241317036034, guid: e8d8e8fe46173b64382f4ed17103c660, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -1287,7 +1499,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 632227935}
+    m_TransformParent: {fileID: 168526800}
     m_Modifications:
     - target: {fileID: 4082484472699264948, guid: 29999612fb54a0d4f995288f74ad0ba4, type: 3}
       propertyPath: m_Pivot.x
@@ -1299,7 +1511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4082484472699264948, guid: 29999612fb54a0d4f995288f74ad0ba4, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4082484472699264948, guid: 29999612fb54a0d4f995288f74ad0ba4, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1376,6 +1588,10 @@ PrefabInstance:
     - target: {fileID: 4082484472699264949, guid: 29999612fb54a0d4f995288f74ad0ba4, type: 3}
       propertyPath: m_Name
       value: Back Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082484472699264951, guid: 29999612fb54a0d4f995288f74ad0ba4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4082484472699264951, guid: 29999612fb54a0d4f995288f74ad0ba4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
